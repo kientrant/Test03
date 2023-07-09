@@ -1,0 +1,335 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product - UTA Juice</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+  </head>
+  <body id="product-bg" class="bg-product-blueberry">
+    <header class="h-10 half-black">
+      <div class="w-full z-index-9">
+        <nav class="flex justify-between items-center padding-h-10">
+          <img
+            onclick="toggeMenu()"
+            id="open-menu-icon"
+            class="show-lg hide icon"
+            src="./image/menu-icon.png"
+            alt=""
+          />
+          <a href="./index.html"
+            ><img class="logo-180-130" src="./image/UTA-Juice.png" alt="UTA-Juice"
+          /></a>
+          <div class="flex gap-2 relative hide-lg">
+            <a
+              href="./index.html"
+              class="text-none fsz-28 fw-300 white inter text-underline-hover text-active"
+              >Home</a
+            >
+            <a
+              href="./product.html"
+              class="text-none fsz-28 fw-300 white inter text-underline-hover text-active text-active-current"
+              >Product</a
+            >
+            <a
+              href="./about-us.html"
+              class="text-none fsz-28 fw-300 white inter text-underline-hover text-active"
+              >About</a
+            >
+            <a
+              href="./contact.html"
+              class="text-none fsz-28 fw-300 white inter text-underline-hover text-active"
+              >Contact</a
+            >
+          </div>
+          <div class="flex gap-2">
+            <img src="./image/find-icon.svg" alt="find" />
+            <img src="./image/cart-icon.svg" alt="cart" />
+          </div>
+        </nav>
+      </div>
+      <div id="menu" class="absolute h-full w-full on-top-0 z-index-9 hide">
+        <div class="half-black h-50">
+          <nav class="flex justify-between items-center padding-h-10">
+            <img
+              onclick="untoggeMenu();"
+              id="close-icon"
+              class="show-lg hide icon"
+              src="./image/close-icon.svg"
+              alt="close"
+            />
+            <a href="./index.html"
+              ><img class="logo-180-130" src="./image/UTA-Juice.png" alt="UTA-Juice"
+            /></a>
+            <div class="flex gap-2 relative hide-lg">
+              <a
+                href="./index.html"
+                class="text-none fsz-28 fw-300 white inter text-underline-hover text-active text-active-current"
+                >Home</a
+              >
+              <a
+                href="./product.html"
+                class="text-none fsz-28 fw-300 white inter text-underline-hover text-active"
+                >Product</a
+              >
+              <a
+                href="./about-us.html"
+                class="text-none fsz-28 fw-300 white inter text-underline-hover text-active"
+                >About</a
+              >
+              <a
+                href="./contact.html"
+                class="text-none fsz-28 fw-300 white inter text-underline-hover text-active"
+                >Contact</a
+              >
+            </div>
+            <div class="flex gap-2">
+              <img src="./image/find-icon.svg" alt="find" />
+              <img src="./image/cart-icon.svg" alt="cart" />
+            </div>
+          </nav>
+          <div class="flex column gap-2 items-center margin-top-10">
+            <a
+              href="./index.html"
+              class="text-none fsz-28 fw-700 white inter text-underline-hover text-active text-active-current"
+              >Home</a
+            >
+            <a
+              href="./product.html"
+              class="text-none fsz-28 fw-700 white inter text-underline-hover text-active"
+              >Product</a
+            >
+            <a
+              href="./about-us.html"
+              class="text-none fsz-28 fw-700 white inter text-underline-hover text-active"
+              >About</a
+            >
+            <a
+              href="./contact.html"
+              class="text-none fsz-28 fw-700 white inter text-underline-hover text-active"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="half-black padding-top-120px">
+      <div
+        class="flex column margin-left-5 margin-unset-lg padding-bottom-60px padding-top-50px items-lg-center"
+      >
+        <h2
+          class="inter fsz-48 fw-700 lh-normal white w-30 w-90-lg text-center-lg margin-auto-lg"
+        >
+          ENJOY EVERY SIP OF YOUR JUICE
+        </h2>
+        <p
+          class="inter fsz-32 fw-400 lh-normal white w-20 w-90-lg margin-auto-lg margin-lg-top-3 text-center-lg"
+        >
+          Cute people will often have cute juice cans!
+        </p>
+        <button
+          onclick="orderProduct()"
+          class="inter max-w-300 padding-15-30-15-30 border-white rounded-40 bg-transparent button-hover-orange border-hover-orange fsz-28 fw-700 white lh-normal margin-top-5 margin-auto-xs"
+        >
+          ODER NOW
+        </button>
+        <div class="w-full flex column-lg-rev items-lg-center">
+          <div class="margin-top-10 flex gap-2">
+            <img
+              id="blueberry"
+              class="product order-hover product-active image-md-w-20 image-xs-w-20 max-high-220"
+              src="./image/blueberry-juice.png"
+              alt="blueberry juice"
+              onclick="toggleProduct(this)"
+            />
+            <img
+              id="kiwi"
+              class="product order-hover image-md-w-20 image-xs-w-20 max-high-220"
+              src="./image/kiwi-juice.png"
+              alt="kiwi juice"
+              onclick="toggleProduct(this)"
+            />
+            <img
+              id="melon"
+              class="product order-hover image-md-w-20 image-xs-w-20 max-high-220"
+              src="./image/melon-juice.png"
+              alt="melon juice"
+              onclick="toggleProduct(this)"
+            />
+            <img
+              id="lime"
+              class="product order-hover image-md-w-20 image-xs-w-20 max-high-220"
+              src="./image/lime-juice.png"
+              alt="lime juice"
+              onclick="toggleProduct(this)"
+            />
+            <img
+              id="orange"
+              class="product order-hover image-md-w-20 image-xs-w-20 max-high-220"
+              src="./image/orange-juice.png"
+              alt="orange juice"
+              onclick="toggleProduct(this)"
+            />
+          </div>
+          <img
+            id="product-choice"
+            class="over-hide unset-position-lg absolute on-right-0 rotate-lg-0 rotate-45 margin-top-5 max-high-700 on-bottom-0"
+            src="./image/big-blue-juice.png"
+            alt="blueberry juice"
+          />
+        </div>
+      </div>
+    </section>
+    <div id="blue-detail" class="hide w-full absolute on-top-0 z-index-8 bg-product-blueberry">
+      <div class="half-black h-full w-full padding-all-10pc">
+        <img onclick="closeOrder()" src="./image/close-product.svg" alt="">
+        <div class="flex column-lg-rev white margin-top-5">
+          <div class="w-50 w-full-lg">
+            <h3 class="inter fsz-48 fw-700 lh-normal white">
+              Fresh blueberry juice
+            </h3>
+            <img class="" src="./image/star-group.svg" alt="star">
+            <p class="margin-top-5">
+              Uses: Supplement vitamin C, dispel all feelings of fatigue and stress immediately. <br>
+              Ingredients: Orange juice atomized orange juice concentrate, acidity regulator (330, 33ii, Vitamin C .)
+            </p>
+            <h3 class="margin-top-10 inter fsz-28 fw-700 lh-normal white"><span>70000</span> VND/ <span>1</span> cans</h3>
+            <div class="flex gap-2">
+              <div class="flex margin-top-3">
+                <button onclick="minus(this)" class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white rounded-left-30 bg-transparent border-hover-orange button-hover-orange">-</button>
+                <p class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white">1</p>
+                <button onclick="plus(this)" class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white rounded-right-30 bg-transparent border-hover-orange button-hover-orange">+</button>
+              </div>
+              <button class="border-white border-hover-orange button-hover-orange padding-0-40-0-40 rounded-30"><img class="max-high-30" src="./image/handbag.png" alt="handbag"></button>
+            </div>
+          </div>
+          <div class="flex column w-50 w-full-lg items-lg-center items-center bg-grey-05 padding-all-10pc rounded-full">
+            <img class="max-high-400 w-auto max-w-220" src="./image/big-blue-juice.png" alt="big-juice">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="melon-detail" class="hide w-full absolute on-top-0 z-index-8 bg-product-melon">
+      <div class="half-black h-full w-full padding-all-10pc">
+        <img onclick="closeOrder()" src="./image/close-product.svg" alt="close">
+        <div class="flex column-lg-rev white margin-top-5">
+          <div class="w-50 w-full-lg">
+            <h3 class="inter fsz-48 fw-700 lh-normal white">
+              Fresh watermelon juice
+            </h3>
+            <img class="" src="./image/star-group.svg" alt="">
+            <p class="margin-top-5">
+              Uses: Provides the following health benefits: Heart, blood pressure, blood flow, weight loss, kidney tonic and antioxidant.<br>
+              Ingredients: Added vitamins A&C, rich source of potassium and magnesium, some natural protein and fiber.
+            </p>
+            <h3 class="margin-top-10 inter fsz-28 fw-700 lh-normal white"><span>20000</span> VND/ <span>1</span> cans</h3>
+            <div class="flex gap-2">
+              <div class="flex margin-top-3">
+                <button onclick="minus(this)" class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white rounded-left-30 bg-transparent border-hover-orange button-hover-orange">-</button>
+                <p class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white">1</p>
+                <button onclick="plus(this)" class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white rounded-right-30 bg-transparent border-hover-orange button-hover-orange">+</button>
+              </div>
+              <button class="border-white border-hover-orange button-hover-orange padding-0-40-0-40 rounded-30"><img class="max-high-30" src="./image/handbag.png" alt=""></button>
+            </div>
+          </div>
+          <div class="flex column w-50 w-full-lg items-lg-center items-center bg-grey-05 padding-all-10pc rounded-full">
+            <img class="max-high-400 w-auto max-w-220" src="./image/big-melon-juice.png" alt="big-melon">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="orange-detail" class="hide w-full absolute on-top-0 z-index-8 bg-product-orange">
+      <div class="half-black h-full w-full padding-all-10pc">
+        <img onclick="closeOrder()" src="./image/close-product.svg" alt="">
+        <div class="flex column-lg-rev white margin-top-5">
+          <div class="w-50 w-full-lg">
+            <h3 class="inter fsz-48 fw-700 lh-normal white">
+              Fresh orange juice
+            </h3>
+            <img class="" src="./image/star-group.svg" alt="">
+            <p class="margin-top-5">
+              Uses: Supplement vitamin C, dispel all feelings of fatigue and stress immediately.<br>
+              Ingredients: Orange juice atomized orange juice concentrate, acidity regulator (330, 33ii, Vitamin C .)
+            </p>
+            <h3 class="margin-top-10 inter fsz-28 fw-700 lh-normal white"><span>20000</span> VND/ <span>1</span> cans</h3>
+            <div class="flex gap-2">
+              <div class="flex margin-top-3">
+                <button onclick="minus(this)" class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white rounded-left-30 bg-transparent border-hover-orange button-hover-orange">-</button>
+                <p class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white">1</p>
+                <button onclick="plus(this)" class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white rounded-right-30 bg-transparent border-hover-orange button-hover-orange">+</button>
+              </div>
+              <button class="border-white border-hover-orange button-hover-orange padding-0-40-0-40 rounded-30"><img class="max-high-30" src="./image/handbag.png" alt=""></button>
+            </div>
+          </div>
+          <div class="flex column w-50 w-full-lg items-lg-center items-center bg-grey-05 padding-all-10pc rounded-full">
+            <img class="max-high-400 w-auto max-w-220" src="./image/big-orange-juice.png" alt="big-orange">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="lime-detail" class="hide w-full absolute on-top-0 z-index-8 bg-product-lime">
+      <div class="half-black h-full w-full padding-all-10pc">
+        <img onclick="closeOrder()" src="./image/close-product.svg" alt="close">
+        <div class="flex column-lg-rev white margin-top-5">
+          <div class="w-50 w-full-lg">
+            <h3 class="inter fsz-48 fw-700 lh-normal white">
+              Fresh lime juice
+            </h3>
+            <img class="" src="./image/star-group.svg" alt="">
+            <p class="margin-top-5">
+              Uses: Supplement vitamin C, dispel all feelings of fatigue and stress immediately. <br>
+              Ingredients: Orange juice atomized orange juice concentrate, acidity regulator (330, 33ii, Vitamin C .)
+            </p>
+            <h3 class="margin-top-10 inter fsz-28 fw-700 lh-normal white"><span>20000</span> VND/ <span>1</span> cans</h3>
+            <div class="flex gap-2">
+              <div class="flex margin-top-3">
+                <button onclick="minus(this)" class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white rounded-left-30 bg-transparent border-hover-orange button-hover-orange">-</button>
+                <p class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white">1</p>
+                <button onclick="plus(this)" class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white rounded-right-30 bg-transparent border-hover-orange button-hover-orange">+</button>
+              </div>
+              <button class="border-white border-hover-orange button-hover-orange padding-0-40-0-40 rounded-30"><img class="max-high-30" src="./image/handbag.png" alt=""></button>
+            </div>
+          </div>
+          <div class="flex column w-50 w-full-lg items-lg-center items-center bg-grey-05 padding-all-10pc rounded-full">
+            <img class="max-high-400 w-auto max-w-220" src="./image/big-lime-juice.png" alt="big-lime">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="kiwi-detail" class="hide w-full absolute on-top-0 z-index-8 bg-product-kiwi">
+      <div class="half-black h-full w-full padding-all-5pc">
+        <img onclick="closeOrder()" src="./image/close-product.svg" alt="close">
+        <div class="flex column-lg-rev white margin-top-5">
+          <div class="w-50 w-full-lg column-lg">
+            <h3 class="inter fsz-48 fw-700 lh-normal white">
+              Fresh kiwi juice
+            </h3>
+            <img class="" src="./image/star-group.svg" alt="start">
+            <p class="margin-top-5 order-lg-3">
+              Uses: Supplement vitamin C, dispel all feelings of fatigue and stress immediately. <br>
+              Ingredients: Orange juice atomized orange juice concentrate, acidity regulator (330, 33ii, Vitamin C .)
+            </p>
+            <div class="order-lg-2">
+              <h3 id="price-cans" class="margin-top-10 inter fsz-28 fw-700 lh-normal white"><span>20000</span> VND/ <span>1</span> cans</h3>
+              <div class="flex gap-2">
+                <div class="flex margin-top-3">
+                  <button onclick="minus(this)" class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white rounded-left-30 bg-transparent border-hover-orange button-hover-orange">-</button>
+                  <p class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white">1</p>
+                  <button onclick="plus(this)" class="inter fsz-28 fw-700 white padding-15-30-15-30 border-white rounded-right-30 bg-transparent border-hover-orange button-hover-orange">+</button>
+                </div>
+                <button class="border-white border-hover-orange button-hover-orange padding-0-40-0-40 rounded-30"><img class="max-high-30" src="./image/handbag.png" alt=""></button>
+              </div>
+            </div>
+          </div>
+          <div class="flex column w-50 w-full-lg items-lg-center items-center bg-grey-05 padding-all-10pc rounded-full">
+            <img class="max-high-400 w-auto max-w-220" src="./image/big-kiwi-juice.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
